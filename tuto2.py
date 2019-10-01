@@ -167,6 +167,10 @@ def redraw_game_window():
     win.blit(text, (370 , 10))
     man.draw(win)
     goblin.draw(win)
+    font2 = pygame.font.SysFont('comicsans', 30, True)
+    myname = font2.render("powered by chemsou", 1, green, blue )
+    win.blit(myname, (20, 20))
+
 
     for bullet in bullets:
         bullet.draw(win)
